@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-07-17T23:22:36Z",
+  "summary": "Busy workday with moderate stress. Started with a run, stayed focused at work despite workload pressure. Managed cigarette urges well, but couldn't progress on personal project. Ended the day feeling exhausted but reflective.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "6",
+    "sleepDuration": "6",
+    "energyLevel": "7",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Reduced cigarette consumption to 4-5 from previous 20+",
+      "Went for a run despite late wake-up",
+      "Stayed focused through a heavy office workload"
+    ],
+    "losses": [
+      "No progress on Tutor app due to office demands",
+      "Ended day feeling emotionally exhausted"
+    ],
+    "ideas": [
+      "Set micro-goals for Tutor app during weekdays",
+      "Continue using creative expression (doodling) as an emotional regulator"
+    ]
+  },
+  "goals": [
+    "Sustain reduced smoking habits",
+    "Resume Tutor app development with timeboxing"
+  ],
+  "tags": [
+    "cigarette_reduction",
+    "workload_pressure",
+    "personal_project_block",
+    "creative_outlet"
+  ],
+  "triggerEvents": [],
+  "symptomChecklist": [
+    "stress",
+    "mental fatigue",
+    "craving control"
+  ]
+}

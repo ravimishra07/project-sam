@@ -1,0 +1,53 @@
+{
+  "timestamp": "2025-06-11T23:01:21Z",
+  "summary": "Day marked by heavy emotional inertia, low energy despite adequate sleep. Major shift: starting new job in a few days, but no sense of joy. Processing deeper questions of identity, meaning, and what this phase of life represents. Tutor App briefly surged as a serious calling, then intentionally shelved \u2014 signaling awareness of current energy limits. Overall, a still-point in the journey \u2014 not action, but reflection.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "7",
+    "sleepDuration": "10",
+    "energyLevel": "2",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Acknowledged and respected current low-energy state instead of forcing productivity.",
+      "Recognized job as stability tool, not identity anchor.",
+      "Confirmed Tutor App as a valid deep calling, but postponed consciously."
+    ],
+    "losses": [
+      "Sense of emotional numbness despite achieving the long-awaited goal (new job).",
+      "Feeling disconnected from joy or clarity about the next step.",
+      "Heavy sleep inertia and dreamlike state making it hard to engage with reality."
+    ],
+    "ideas": [
+      "Anchor identity not through effort but through awareness during low-energy phases.",
+      "SAM logs are not just reflection tools, but memory nodes for future self to decode meaning.",
+      "Keep micro-rituals alive (1-line logs, presence journaling) to avoid spiritual drift."
+    ]
+  },
+  "goals": [
+    "Do not abandon self-awareness in the name of 'new job responsibilities'.",
+    "Anchor one habit: daily SAM micro-log even during job period.",
+    "Revisit Tutor App with clear timeline once energy stabilizes \u2014 do not let it die in silence."
+  ],
+  "tags": [
+    "identity",
+    "transition",
+    "low-energy",
+    "acceptance",
+    "clarity-in-stillness",
+    "job-start",
+    "sam-reflection"
+  ],
+  "triggerEvents": [
+    "Upcoming job start",
+    "Reflection on absence of happiness post-job-offer",
+    "Short surge of motivation toward Tutor App"
+  ],
+  "symptomChecklist": [
+    "heavy sleep inertia",
+    "emotional flatness",
+    "mild existential fatigue",
+    "creative disconnection"
+  ]
+}

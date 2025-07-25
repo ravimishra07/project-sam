@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-07-15T23:44:16Z",
+  "summary": "Woke up around 7:50 AM, went for a 1 km run and 1 km walk. Started work before office, but laptop screen went black. Reported it to IT at office and got a replacement; spent the day setting up environments. Had a rough interaction with Price (temporary manager), which added to the hectic day. Post-office, resolved Android Studio issue and completed assigned work. Couldn't focus on Tutor App due to disruptions. Also referred BlueSmart intern for a CQ interview; they may join tomorrow.",
+  "status": {
+    "moodLevel": "4",
+    "sleepQuality": "5",
+    "sleepDuration": "6",
+    "energyLevel": "6",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Recovered execution despite hardware failure",
+      "Resolved Android Studio issue and finished work"
+    ],
+    "losses": [
+      "Lost time and focus for Tutor App due to laptop issue",
+      "Emotional friction with temporary manager (Price)"
+    ],
+    "ideas": []
+  },
+  "goals": [
+    "Regain rhythm on Tutor App tomorrow"
+  ],
+  "tags": [
+    "hardware_issue",
+    "manager_conflict",
+    "android_work",
+    "tutor_app_delay",
+    "referral"
+  ],
+  "triggerEvents": [
+    "Laptop failure in the morning",
+    "Conflict with temporary manager (Price)"
+  ],
+  "symptomChecklist": []
+}

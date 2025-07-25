@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-07-19T01:57:48Z",
+  "summary": "Woke up late. Office was intense, stayed busy most of the day. Smoked more due to stress. Last night ordered food + cigarettes on Blinkit, overspending \u20b9500 \u2014 not great for finances. After work, made strong progress on Tutor app UI (used AI) and cleaned up Project SAM structure. Productive evening, but day came with cost: stress, spending, smoking.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "6",
+    "sleepDuration": "6",
+    "energyLevel": "7",
+    "stabilityScore": "5"
+  },
+  "insights": {
+    "wins": [
+      "Progress on Tutor app & SAM",
+      "Good work focus"
+    ],
+    "losses": [
+      "High cigarette count",
+      "500+ impulsive spend"
+    ],
+    "ideas": [
+      "Cap Blinkit use",
+      "Track spend triggers"
+    ]
+  },
+  "goals": [
+    "Cut smoking tomorrow",
+    "No delivery orders for 3 days"
+  ],
+  "tags": [
+    "office_pressure",
+    "budget_spike",
+    "ai_productivity"
+  ],
+  "triggerEvents": [
+    "Work stress",
+    "Late-night impulse"
+  ],
+  "symptomChecklist": [
+    "stress",
+    "smoking",
+    "overspending"
+  ]
+}

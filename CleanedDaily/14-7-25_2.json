@@ -1,0 +1,37 @@
+{
+  "timestamp": "2025-07-14T23:47:55Z",
+  "summary": "Energy is returning after a long low. Not sure if it's meds or cycle, but it's rising\u2014need to watch ceiling. Able to work again, finished Firebase CMS mostly (realized I had already done bulk earlier). Mental cohesion coming back. Office had a slight patch with manager, but didn't spiral. Work\u2019s on track. Tutor app looks real\u2014maybe even profitable\u2014but not attaching to that yet. Feeling better, not manic, just stable with mild hope.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "6",
+    "sleepDuration": "7",
+    "energyLevel": "7",
+    "stabilityScore": "6"
+  },
+  "insights": {
+    "wins": [
+      "Energy picking up\u2014functional and grounded",
+      "Firebase CMS is almost done\u2014just needed reconnection of old work",
+      "Handled minor manager tension without emotional reaction"
+    ],
+    "losses": [
+      "Mild risk of overinterpreting hope as signal\u2014monitor mood over next 3 days"
+    ],
+    "ideas": [
+      "Track energy trend post-med change for 7-day window before inferring causality"
+    ]
+  },
+  "goals": [
+    "Polish Tutor App for demo-ready state",
+    "Keep mental ceiling in check while maintaining output"
+  ],
+  "tags": [
+    "firebase",
+    "tutorApp",
+    "energyReturn",
+    "meds",
+    "workUpdate"
+  ],
+  "triggerEvents": [],
+  "symptomChecklist": []
+}

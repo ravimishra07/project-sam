@@ -1,0 +1,48 @@
+{
+  "timestamp": "2025-06-20T00:08:26Z",
+  "summary": "First real day at Wiom. Despite the mental strain of performance expectations and the long commute, energy was moderately stable. Social confidence is still a work in progress, but key wins include initiating conversations, building camaraderie, and managing emotional baseline throughout the day. Some anxiety around voice expression and eye contact remains, but no spirals or major distortions noted.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "8",
+    "sleepDuration": "6",
+    "energyLevel": "6",
+    "stabilityScore": "8"
+  },
+  "insights": {
+    "wins": [
+      "Good social interaction on onboarding day at Wiom",
+      "Started making friends",
+      "Maintained emotional baseline despite minor stress triggers",
+      "No emotional crashes or withdrawal patterns"
+    ],
+    "losses": [
+      "Lower oratory skills observed",
+      "Voice confidence and expressive strength still low"
+    ],
+    "ideas": [
+      "Experiment with 30-second high-expression drills before reaching office",
+      "Train one small social skill per day (e.g., strong eye contact for 5 seconds)"
+    ]
+  },
+  "goals": [
+    "Improve expressive tone and social presence at work",
+    "Anchor 1 clear win each workday for self-esteem continuity",
+    "Observe triggers without suppressing productive energy states"
+  ],
+  "tags": [
+    "social_confidence",
+    "first_day",
+    "expression_training",
+    "onboarding",
+    "self_monitoring"
+  ],
+  "triggerEvents": [
+    "Long metro travel",
+    "Fear of being judged on speaking style"
+  ],
+  "symptomChecklist": [
+    "mild social anxiety",
+    "voice flatness",
+    "self-monitoring loop (non-destructive)"
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-07-11T00:19:03Z",
+  "summary": "Mentally flat, no spark. Body rested but low clarity. Felt hollow reflecting on past projects. Confusion over which app to go all-in on. Logged patterns, but execution scattered. Tutor app now feels like the only viable wealth path.",
+  "status": {
+    "moodLevel": "4",
+    "sleepQuality": "6",
+    "sleepDuration": "7",
+    "energyLevel": "4",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Reviewed all past builds and patterns clearly"
+    ],
+    "losses": [
+      "No real user traction from any app yet"
+    ],
+    "ideas": [
+      "Go all-in on Tutor App for real market and monetization"
+    ]
+  },
+  "goals": [
+    "Lock 3-day execution plan for Tutor App MVP",
+    "Defer all non-paying ideas"
+  ],
+  "tags": [
+    "execution",
+    "review",
+    "tutor-app",
+    "emotional-fatigue",
+    "decision-point"
+  ],
+  "triggerEvents": [
+    "Re-reading handwritten logs caused sharp clarity dip"
+  ],
+  "symptomChecklist": [
+    "emotional hollowness",
+    "low motivation despite rest",
+    "mild confusion"
+  ]
+}

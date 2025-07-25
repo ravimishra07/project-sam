@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-07-16T00:16:41Z",
+  "summary": "Note this is 16 july log... rename later. Busy day at work with a new task assignment. Skipped morning run. Felt high positive energy and reduced social anxiety. Realized that stress and anxiety levels are closely tied to office workload. Emphasized mood safety as a priority.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "7",
+    "sleepDuration": "6",
+    "energyLevel": "7",
+    "stabilityScore": "6"
+  },
+  "insights": {
+    "wins": [
+      "High energy and positive mood during work.",
+      "Notable drop in social anxiety."
+    ],
+    "losses": [
+      "Skipped morning run."
+    ],
+    "ideas": [
+      "Protect mood by managing exposure to office stress.",
+      "Make mood safety a primary metric over other secondary routines."
+    ]
+  },
+  "goals": [
+    "Prioritize emotional stability over performance.",
+    "Observe how work-related stress shifts mood daily."
+  ],
+  "tags": [
+    "workloadPressure",
+    "moodSafety",
+    "socialAnxietyDown",
+    "energyHigh"
+  ],
+  "triggerEvents": [
+    "Shifted from refactoring to new task at office."
+  ],
+  "symptomChecklist": [
+    "mild stress",
+    "reduced anxiety"
+  ]
+}
