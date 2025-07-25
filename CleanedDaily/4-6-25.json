@@ -1,0 +1,33 @@
+{
+  "timestamp": "2025-06-04T23:38:28Z",
+  "summary": "today was a plan but non productive day I am confused while applying whether mention my salary is 10 lpa or 20 lpa. life is no certain direction but I have an interview in Delhi on Friday and tonight I'll be leaving for Delhi and it will be a travel it will disturb my routine and all but have nothing good but nothing that bad is well",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "6",
+    "sleepDuration": "10",
+    "energyLevel": "2",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "stayed stable"
+    ],
+    "losses": [
+      "no routine",
+      "no goal followed"
+    ],
+    "ideas": []
+  },
+  "goals": [],
+  "tags": [
+    "stable",
+    "no routine",
+    "non productive"
+  ],
+  "triggerEvents": [
+    "rejected in interview where interview was Good"
+  ],
+  "symptomChecklist": [
+    "no routine"
+  ]
+}

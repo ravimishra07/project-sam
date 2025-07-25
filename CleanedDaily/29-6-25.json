@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-06-29T23:16:44Z",
+  "summary": "Execution dragging. Momentum inconsistent. System in place but underutilized. High awareness, low leverage.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "7",
+    "sleepDuration": "7",
+    "energyLevel": "5",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Maintaining daily interaction with structured system",
+      "Caught emotional drift before full crash"
+    ],
+    "losses": [
+      "Low-value input cycles (overthinking, redundant queries)",
+      "SAM and execution tools not fully weaponized past awareness"
+    ],
+    "ideas": [
+      "Harden 'Brutal Mode' into callable function inside SAM",
+      "Score each day on input vs output delta"
+    ]
+  },
+  "goals": [
+    "Ship 1 concrete Tutor App feature this week",
+    "Automate SAM weekly summary generation"
+  ],
+  "tags": [
+    "drift-risk",
+    "system-awareness",
+    "execution-gap"
+  ],
+  "triggerEvents": [
+    "Low-urgency job phase",
+    "Idle commute hours underleveraged"
+  ],
+  "symptomChecklist": [
+    "mild FOMO",
+    "inconsistent focus blocks",
+    "idea overload without action"
+  ]
+}

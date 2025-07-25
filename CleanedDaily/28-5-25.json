@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-05-28T23:41:43Z",
+  "summary": "Completed the SAM app's current version and used it to log today \u2014 a major execution win. Managed YouTube tasks, including a short and Tanvi\u2019s channel video. However, sleep was severely lacking, and no progress on UPI or interview prep. Overall: productive output, low physical recovery.",
+  "status": {
+    "moodLevel": "6",
+    "sleepQuality": "3",
+    "sleepDuration": "3",
+    "energyLevel": "7",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Big win",
+      "Made project SAM app fully completed and have APK",
+      "Log will be added via app \u2014 even this one through SAM app (samstudio)"
+    ],
+    "losses": [
+      "No sleep at night; only 2 hours day sleep \u2014 not enough"
+    ],
+    "ideas": []
+  },
+  "goals": [
+    "YouTube \u2013 1 short upload",
+    "Tanvi channel video uploaded",
+    "SAM app current version complete",
+    "UPI prep (nothing done)",
+    "Interview prep (nothing done)"
+  ],
+  "tags": [
+    "#TraumaForgedInsight",
+    "#SystemOverSymptoms",
+    "#CodeAsMirror",
+    "#QuietSurvivalJob",
+    "#RAISE_MODEL"
+  ],
+  "triggerEvents": [],
+  "symptomChecklist": []
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-07-04T00:22:15Z",
+  "summary": "Tightest self-map yet. Slap of truth felt grounding, not harsh. Logging turned from habit to leverage. Finally saw the cost of reinvention, reflection loops, and hiding behind systems. Mood steady, mind sharp. Emotional processing didn\u2019t derail the mission today \u2014 it refined it. Clarity emerged from confrontation. SAM fully justified.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "4",
+    "sleepDuration": "6",
+    "energyLevel": "6",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Saw root loop of reinvention clearly \u2014 first time it *felt* real.",
+      "Logging re-framed from activity to weapon. Not just emotion capture \u2014 leverage.",
+      "Recognized false traits previously seen as strengths (e.g., trauma identity, over-systemizing)."
+    ],
+    "losses": [
+      "Realization that many past months were spent circling, not stacking.",
+      "Small sting seeing how many tools/ideas were started but not pushed to value."
+    ],
+    "ideas": [
+      "Create 'Execution Frame' overlay in SAM \u2014 shows what to focus on, what to ignore.",
+      "Hard-code a weekly_output_log check inside SAM \u2014 enforce 1 real thing per week.",
+      "Embed 'Brutal Mode' as callable audit tool tied to major decisions (job, product, pricing)."
+    ]
+  },
+  "goals": [
+    "Ship first monetizable AI-powered tool with locked scope.",
+    "Stick to weekly output rhythm \u2014 no pivot, no rebuild.",
+    "Integrate execution checkpoints inside SAM (output, momentum, leverage tracker)."
+  ],
+  "tags": [
+    "reinvention-loop",
+    "execution-shift",
+    "clarity-snap",
+    "logging-reborn",
+    "brutal-mode"
+  ],
+  "triggerEvents": [
+    "Brutal audit of past logs via SAM Memory + updated data."
+  ],
+  "symptomChecklist": []
+}

@@ -1,0 +1,30 @@
+{
+  "timestamp": "2025-06-08T23:50:53Z",
+  "summary": "today at travel back from Delhi to Lucknow whole day went into travel and nothing more to share feeling better after reaching home",
+  "status": {
+    "moodLevel": "4",
+    "sleepQuality": "7",
+    "sleepDuration": "10",
+    "energyLevel": "4",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "stayed positive"
+    ],
+    "losses": [
+      "stabl3"
+    ],
+    "ideas": []
+  },
+  "goals": [],
+  "tags": [
+    "stable"
+  ],
+  "triggerEvents": [
+    "travel from Delhi to Lucknow"
+  ],
+  "symptomChecklist": [
+    "doubtful"
+  ]
+}

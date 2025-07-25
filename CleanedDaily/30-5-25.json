@@ -1,0 +1,39 @@
+{
+  "timestamp": "2025-05-30T03:14:52Z",
+  "summary": "Today was different as i am experimenting sleep change, like going to sleep at 6am till 1 pm  Rest it was productive day but financial bad decesion on food and cigarettes ",
+  "status": {
+    "moodLevel": "6",
+    "sleepQuality": "7",
+    "sleepDuration": "12",
+    "energyLevel": "6",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "I remained stable",
+      "created flash card app"
+    ],
+    "losses": [
+      "financial bad decesion",
+      "lazy pay unnecessary expenses"
+    ],
+    "ideas": [
+      "flash card app",
+      "tutor app"
+    ]
+  },
+  "goals": [],
+  "tags": [
+    "sleep routine change",
+    "bad financial decesions",
+    "postive",
+    "productive"
+  ],
+  "triggerEvents": [
+    "realise unnnessary expenses"
+  ],
+  "symptomChecklist": [
+    "neutral",
+    "elevated energy"
+  ]
+}

@@ -1,0 +1,50 @@
+{
+  "timestamp": "2025-06-27T23:52:44Z",
+  "summary": "Day marked by cognitive load and existential rumination. Focused on mental math foundations like squares, roots, and tables\u2014driven by a deep sense that calculation mastery might anchor future competence. Underneath, there's a low-burn fear of irrelevance and private job instability, triggering thoughts about government exams. Despite low mood and energy, progress was made. Emotional flatness persisted, but no breakdown.",
+  "status": {
+    "moodLevel": "4",
+    "sleepQuality": "7",
+    "sleepDuration": "7",
+    "energyLevel": "4",
+    "stabilityScore": "4"
+  },
+  "insights": {
+    "wins": [
+      "Stuck to quant foundation work despite lack of motivation",
+      "Avoided emotional collapse even while brain felt foggy",
+      "Maintained internal clarity: this is a transition phase, not an endpoint"
+    ],
+    "losses": [
+      "Low emotional drive and social connection",
+      "Persistent questioning of future relevance and job market anxiety",
+      "Felt isolated in ambition\u2014uncertain if these steps will pay off"
+    ],
+    "ideas": [
+      "Mental calculation as both a skill and emotional anchor\u2014repetitive math may calm the chaos",
+      "Security may come less from external job and more from ruthless internal simplification",
+      "Use SAM-like protocol for government prep too: focus on triggers, weekly loops, AI feedback"
+    ]
+  },
+  "goals": [
+    "Continue mastering math tables, squares, roots till automatic",
+    "Design a prep calendar with clear milestones (Quant > Reasoning > GK)",
+    "Let the next 30 days be execution\u2014not existential reflection"
+  ],
+  "tags": [
+    "quant-prep",
+    "low-energy",
+    "job-security-fear",
+    "discipline-over-motivation"
+  ],
+  "triggerEvents": [
+    "Job future question popped up again during commute/thought loop",
+    "Sense of being left behind compared to peers in private sector"
+  ],
+  "symptomChecklist": [
+    "brain fog",
+    "emotional numbness",
+    "fear loops",
+    "mild anhedonia",
+    "inner restlessness"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "timestamp": "2025-07-14T00:10:26Z",
+  "summary": "Visited Aman in Noida \u2014 felt genuinely good reconnecting after a long gap. Emotional tone steady. SpendMirror running smoothly; Tutor app still in planning phase. Relationship with Tanvi stabilized after recent conflict. Life rhythm feels positive. One part of mind remains cautious \u2014 monitoring for mood escalation, but no signs yet. Meds seem to be holding balance.",
+  "status": {
+    "moodLevel": "7",
+    "sleepQuality": "7",
+    "sleepDuration": "9",
+    "energyLevel": "6",
+    "stabilityScore": "7"
+  },
+  "insights": {
+    "wins": [
+      "Positive social reconnection with Aman",
+      "SpendMirror operating stably",
+      "Emotional conflict with Tanvi resolved",
+      "Mood and sleep holding steady under new med regimen"
+    ],
+    "losses": [],
+    "ideas": [
+      "Add light structure to Tutor app planning phase",
+      "Continue daily self-checks for mood drift"
+    ]
+  },
+  "goals": [
+    "Maintain social rhythm with low intensity",
+    "Keep project execution slow and grounded",
+    "Avoid sudden expansions or overcommits"
+  ],
+  "tags": [
+    "aman_meeting",
+    "project_update",
+    "tanvi_stable",
+    "med_monitoring",
+    "grounded_progress"
+  ],
+  "triggerEvents": [],
+  "symptomChecklist": [
+    "no_hypomania",
+    "mild_caution",
+    "emotional_stability",
+    "good_sleep"
+  ]
+}

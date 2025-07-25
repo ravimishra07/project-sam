@@ -1,0 +1,56 @@
+{
+  "timestamp": "2025-07-24T23:13:37Z",
+  "summary": "Past 3 weeks have been hectic. Sleep\u2019s been trash \u2014 last night only got 3 hours again. Work pressure nonstop, manager's behavior just added to the mental load. He lashed out over a bug that wasn\u2019t even real, didn\u2019t own up, just redirected anger to something else. I stayed calm, didn\u2019t react \u2014 could\u2019ve exploded, but I held it. After the fight, brain was stable but body and nerves still drained. That said, I had a long, solid chat with ChatGPT about AI jobs. Started from a place of confusion and ended with actual direction. Figured out that AI job market is full of fluff, but there\u2019s a niche I can own: building local, on-device tools that solve real pain in India. And from that, we refined and landed on a powerful idea: FormMate \u2014 an offline form-filling assistant for Indian users, especially middle-class/lower-income. That idea\u2019s now locked as a secondary project. Derap stays the primary mission. Ideas are coming together, but my bandwidth is burning out. Hoping tomorrow isn't another fire.",
+  "status": {
+    "moodLevel": "5",
+    "sleepQuality": "3",
+    "sleepDuration": "3",
+    "energyLevel": "3",
+    "stabilityScore": "2"
+  },
+  "insights": {
+    "wins": [
+      "Didn\u2019t lose my temper during that heated moment with manager. Stayed composed.",
+      "Completed all work despite sleep debt and high stress.",
+      "Clarity came through the chaos \u2014 figured out where I fit in AI space, and locked in the FormMate idea.",
+      "Derap is still top priority \u2014 and I know why."
+    ],
+    "losses": [
+      "Manager's behavior was draining \u2014 no apology, just redirected blame.",
+      "Running on fumes \u2014 third day in a row of barely 3\u20134 hrs sleep.",
+      "Stress is building up fast. It's manageable, but not for long like this."
+    ],
+    "ideas": [
+      "Local AI tools on phones will be big \u2014 not chatbots, but real Indian use cases.",
+      "FormMate has potential: form help for people who can\u2019t decode govt forms or English tech.",
+      "I should stop chasing complexity for the sake of it. Build things that solve *boring real problems*.",
+      "Derap has to be my way out \u2014 the mission to not work under unstable people anymore."
+    ]
+  },
+  "goals": [
+    "Define Derap\u2019s core scope \u2014 what pain it solves, for whom.",
+    "Write down the FormMate MVP flow, but don\u2019t build yet. Just park it for later."
+  ],
+  "tags": [
+    "derap",
+    "formmate",
+    "ai-direction",
+    "toxic-work",
+    "sleep-deprived",
+    "anger-managed",
+    "idea-locked"
+  ],
+  "triggerEvents": [
+    "Manager wrongly blamed me for an issue, lashed out, didn't take responsibility. Made me furious internally, but I stayed cool on the surface.",
+    "Started day confused about AI career \u2014 ended with clarity and a concrete project idea.",
+    "Ongoing sleep deficit + subject load + high-pressure work is quietly piling up."
+  ],
+  "symptomChecklist": [
+    "low-sleep",
+    "mental-fatigue",
+    "anger-suppressed",
+    "increased-responsibilities",
+    "focus-fragmented",
+    "high-cognitive-load"
+  ]
+}

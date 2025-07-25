@@ -1,0 +1,38 @@
+{
+  "timestamp": "2025-05-31T23:53:20Z",
+  "summary": "This was a non productivebut stable day. i do not have a structure. nikhil and pankaj fufaji came today. Interview was there but couldn't attend the interview as link was broken . He did not picked up the call.",
+  "status": {
+    "moodLevel": "6",
+    "sleepQuality": "8",
+    "sleepDuration": "8",
+    "energyLevel": "7",
+    "stabilityScore": "5"
+  },
+  "insights": {
+    "wins": [
+      "better sleep last night"
+    ],
+    "losses": [
+      "no video upload",
+      "no structure in the day"
+    ],
+    "ideas": [
+      "Tutor app executiom plan"
+    ]
+  },
+  "goals": [
+    "no goals followed"
+  ],
+  "tags": [
+    "unproductive",
+    "stable",
+    "no progress"
+  ],
+  "triggerEvents": [
+    "relatives visit"
+  ],
+  "symptomChecklist": [
+    "elevated energy",
+    "mood higher than baseline"
+  ]
+}

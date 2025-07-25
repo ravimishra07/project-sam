@@ -1,0 +1,62 @@
+{
+  "timestamp": "2025-05-22T23:30:00Z",
+  "summary": "Had a moderate interview\u2014uncertain if it went well. The rest of the day was average.",
+  "status": {
+    "moodLevel": "6",
+    "sleepQuality": "9",
+    "sleepDuration": "9",
+    "energyLevel": "7",
+    "stabilityScore": "7"
+  },
+  "insights": {
+    "wins": [
+      "Gave Unacademy interview with best of me"
+    ],
+    "losses": [
+      "Health down",
+      "Cigarette bothering"
+    ],
+    "ideas": [
+      "I have not built 10 of SAM yet.",
+      "I should build an app for myself first before any new venture."
+    ]
+  },
+  "goals": [
+    {
+      "id": "g1",
+      "name": "YouTube - Short #1",
+      "progress": "Uploaded 1 short, missed daily goal",
+      "next_steps": "Plan and batch record upcoming shorts"
+    },
+    {
+      "id": "g2",
+      "name": "SAM App",
+      "progress": "Did ideation",
+      "next_steps": "Build MVP for personal use"
+    },
+    {
+      "id": "g3",
+      "name": "UBI Preparation",
+      "progress": "Skipped",
+      "next_steps": "Reschedule prep and set specific topics to cover"
+    },
+    {
+      "id": "g4",
+      "name": "Interview Preparation",
+      "progress": "Done",
+      "next_steps": "Review feedback and refine answers"
+    }
+  ],
+  "tags": [
+    "interview",
+    "hop",
+    "Anil's wedding"
+  ],
+  "triggerEvents": [
+    "Traveling for Anil\u2019s wedding tomorrow is an anxiety trigger"
+  ],
+  "symptomChecklist": [
+    "Tonsil pain",
+    "Anxiety of travel"
+  ]
+}

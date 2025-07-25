@@ -1,0 +1,45 @@
+{
+  "timestamp": "2025-07-05T23:59:35Z",
+  "summary": "Day was emotionally heavy. Call with Banvi brought unresolved patterns back into view \u2014 emotional mismatch, repeated conflict, and final clarity on incompatibility. Spent much of the day refracting emotionally and cleaning code. Cursor workflow felt misaligned, leading to frustration. Mood was low despite effort. Felt detached and irritable. No major forward push on SAM or SpendMirror; internal re-alignment dominated.",
+  "status": {
+    "moodLevel": "6",
+    "sleepQuality": "7",
+    "sleepDuration": "6",
+    "energyLevel": "7",
+    "stabilityScore": "5"
+  },
+  "insights": {
+    "wins": [
+      "Maintained emotional clarity during heated call \u2014 didn\u2019t collapse or rescue.",
+      "Did internal cleanup of emotional identity and some code refactoring despite low mood."
+    ],
+    "losses": [
+      "Cursor workflow felt ineffective due to lack of direction and prep.",
+      "Emotional residue from Banvi conversation impacted focus and execution."
+    ],
+    "ideas": [
+      "Cursor only amplifies clarity \u2014 it doesn\u2019t create it. Plan, then prompt.",
+      "Emotional truth isn\u2019t emotional health. Process still needed after clarity."
+    ]
+  },
+  "goals": [
+    "Do one tangible forward task on SAM v2 or SpendMirror (not cleanup).",
+    "Reassess Cursor workflow: define task better before opening session."
+  ],
+  "tags": [
+    "emotional_clarity",
+    "cursor",
+    "banvi",
+    "code_cleanup",
+    "frustration"
+  ],
+  "triggerEvents": [
+    "Call with Banvi \u2014 emotional lash-out and realization of incompatibility"
+  ],
+  "symptomChecklist": [
+    "mild emotional detachment",
+    "frustration",
+    "mental fatigue",
+    "low social desire"
+  ]
+}

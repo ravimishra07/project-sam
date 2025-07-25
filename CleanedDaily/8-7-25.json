@@ -1,0 +1,41 @@
+{
+  "timestamp": "2025-07-08T23:53:43Z",
+  "summary": "Day moved with sluggish baseline. Emotionally flat but functionally steady. Cigarette and food spending spiked again\u2014SpendMirror exposing it clearly now. Relationship detachment still hovering in background. Low mood but no crash. Execution continues, barely.",
+  "status": {
+    "moodLevel": "4",
+    "sleepQuality": "4",
+    "sleepDuration": "5",
+    "energyLevel": "4",
+    "stabilityScore": "3"
+  },
+  "insights": {
+    "wins": [],
+    "losses": [
+      "Expenses on food and cigarettes remain high",
+      "SpendMirror highlights repetitive spending loops"
+    ],
+    "ideas": []
+  },
+  "goals": [
+    "Fix bugs in SpendMirror",
+    "Update SAM Studio logger",
+    "Start Tutor App core"
+  ],
+  "tags": [
+    "numb",
+    "neutral",
+    "good effort",
+    "breakup pain",
+    "low confidence"
+  ],
+  "triggerEvents": [
+    "Office stress",
+    "loneliness",
+    "low social acceptance"
+  ],
+  "symptomChecklist": [
+    "low mood",
+    "suicidal ideation",
+    "sleeping less"
+  ]
+}

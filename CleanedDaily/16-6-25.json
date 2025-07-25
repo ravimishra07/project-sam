@@ -1,0 +1,42 @@
+{
+  "timestamp": "2025-06-16T23:16:52Z",
+  "summary": "First day at Wiom. Completed joining formalities. Woke up early and started day at 6 AM. Long commute (2 hours each side in metro) made it a heavy, draining day. Felt impact of social low-confidence\u2014low voice, trouble with eye contact, and flat expressions were noticeable. Energy dipped early but managed to push through. Stability okay but underlying tension present.",
+  "status": {
+    "moodLevel": "4",
+    "sleepQuality": "7",
+    "sleepDuration": "6",
+    "energyLevel": "3",
+    "stabilityScore": "5"
+  },
+  "insights": {
+    "wins": [
+      "Showed up and completed all joining formalities despite early start and long commute"
+    ],
+    "losses": [
+      "Social confidence hit hard\u2014voice low, eye contact hard, lack of expressive communication"
+    ],
+    "ideas": [
+      "Start building small behavioral anchors during commute or breaks\u2014e.g., micro voice exercises or eye contact drills"
+    ]
+  },
+  "goals": [
+    "Survive this first week without burnout",
+    "Start observing social patterns and triggers without judgment"
+  ],
+  "tags": [
+    "joining",
+    "work",
+    "commute",
+    "social-anxiety",
+    "first-day"
+  ],
+  "triggerEvents": [
+    "Lengthy commute",
+    "Meeting new people in formal setting"
+  ],
+  "symptomChecklist": [
+    "low voice",
+    "difficulty maintaining eye contact",
+    "lack of facial expression"
+  ]
+}
