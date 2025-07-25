@@ -8,15 +8,16 @@ import os
 import json
 import numpy as np
 from sentence_transformers import SentenceTransformer
-from openai import OpenAI
+import requests
 from typing import List, Dict, Any, Tuple
 import sys
 from pathlib import Path
 
 class RAGQueryEngine:
-    def __init__(self):
+    def __init__(self, llm_backend: str = "ollama", model_name: str = "mistral"):
         self.model = SentenceTransformer('all-mpnet-base-v2')
-        self.client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
+        self.llm_backend = llm_backend  # "ollama", "lmstudio", or "openai"
+        self.model_name = model_name
         self.embeddings_file = "cleaned_log_embeddings.jsonl"
         self.logs_dir = "../CleanedDaily"
         
@@ -47,8 +48,18 @@ class RAGQueryEngine:
                 continue
                 
             log_embedding = np.array(log_data['embedding'])
-            similarity = np.dot(query_embedding, log_embedding) / (
-                np.linalg.norm(query_embedding) * np.linalg.norm(log_embedding)
+            
+            # Handle different embedding dimensions by truncating or padding
+            if len(query_embedding) != len(log_embedding):
+                min_len = min(len(query_embedding), len(log_embedding))
+                query_embedding_trimmed = query_embedding[:min_len]
+                log_embedding_trimmed = log_embedding[:min_len]
+            else:
+                query_embedding_trimmed = query_embedding
+                log_embedding_trimmed = log_embedding
+            
+            similarity = np.dot(query_embedding_trimmed, log_embedding_trimmed) / (
+                np.linalg.norm(query_embedding_trimmed) * np.linalg.norm(log_embedding_trimmed)
             )
             similarities.append((similarity, log_data))
         
@@ -100,12 +111,22 @@ class RAGQueryEngine:
         
         return prompt
     
-    def query_openai(self, prompt: str) -> str:
-        """Send formatted prompt to OpenAI and get response"""
+    def query_llm(self, prompt: str) -> str:
+        """Send formatted prompt to LLM (Ollama, LM Studio, or OpenAI) and get response"""
+        if self.llm_backend == "ollama":
+            return self.query_ollama(prompt)
+        elif self.llm_backend == "lmstudio":
+            return self.query_lmstudio(prompt)
+        else:
+            return self.query_openai(prompt)
+    
+    def query_ollama(self, prompt: str) -> str:
+        """Send formatted prompt to Ollama and get response"""
         try:
-            response = self.client.chat.completions.create(
-                model="gpt-4",
-                messages=[
+            url = "http://localhost:11434/api/chat"
+            payload = {
+                "model": self.model_name,
+                "messages": [
                     {
                         "role": "system",
                         "content": "You are a personal reflection assistant. Analyze the provided daily logs and answer the user's question based on the patterns, emotions, and experiences shown in the logs. Be insightful, empathetic, and provide actionable observations."
@@ -115,14 +136,98 @@ class RAGQueryEngine:
                         "content": prompt
                     }
                 ],
-                max_tokens=1000,
-                temperature=0.7
-            )
-            return response.choices[0].message.content
+                "stream": False,
+                "options": {
+                    "temperature": 0.7,
+                    "num_predict": 1000
+                }
+            }
+            
+            response = requests.post(url, json=payload, timeout=60)
+            response.raise_for_status()
+            
+            result = response.json()
+            return result.get("message", {}).get("content", "No response content")
+            
+        except requests.exceptions.ConnectionError:
+            return f"Error: Cannot connect to Ollama. Make sure Ollama is running with: ollama serve"
+        except requests.exceptions.RequestException as e:
+            return f"Error querying Ollama: {str(e)}"
+        except Exception as e:
+            return f"Error: {str(e)}"
+    
+    def query_lmstudio(self, prompt: str) -> str:
+        """Send formatted prompt to LM Studio and get response"""
+        try:
+            url = "http://localhost:1234/v1/chat/completions"
+            payload = {
+                "model": self.model_name,
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "You are a personal reflection assistant. Analyze the provided daily logs and answer the user's question based on the patterns, emotions, and experiences shown in the logs. Be insightful, empathetic, and provide actionable observations."
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                "max_tokens": 1000,
+                "temperature": 0.7,
+                "stream": False
+            }
+            
+            response = requests.post(url, json=payload, timeout=60)
+            response.raise_for_status()
+            
+            result = response.json()
+            return result["choices"][0]["message"]["content"]
+            
+        except requests.exceptions.ConnectionError:
+            return f"Error: Cannot connect to LM Studio. Make sure LM Studio is running and the local server is started (port 1234)"
+        except requests.exceptions.RequestException as e:
+            return f"Error querying LM Studio: {str(e)}"
+        except Exception as e:
+            return f"Error: {str(e)}"
+    
+    def query_openai(self, prompt: str) -> str:
+        """Send formatted prompt to OpenAI and get response"""
+        # Check for OpenAI API key only when actually calling the API
+        if not os.getenv("OPENAI_API_KEY"):
+            return "Error: OPENAI_API_KEY environment variable not set"
+            
+        try:
+            url = "https://api.openai.com/v1/chat/completions"
+            headers = {
+                "Authorization": f"Bearer {os.getenv('OPENAI_API_KEY')}",
+                "Content-Type": "application/json"
+            }
+            payload = {
+                "model": "gpt-4",
+                "messages": [
+                    {
+                        "role": "system",
+                        "content": "You are a personal reflection assistant. Analyze the provided daily logs and answer the user's question based on the patterns, emotions, and experiences shown in the logs. Be insightful, empathetic, and provide actionable observations."
+                    },
+                    {
+                        "role": "user",
+                        "content": prompt
+                    }
+                ],
+                "max_tokens": 1000,
+                "temperature": 0.7
+            }
+            
+            response = requests.post(url, headers=headers, json=payload, timeout=60)
+            response.raise_for_status()
+            
+            result = response.json()
+            return result["choices"][0]["message"]["content"]
+            
         except Exception as e:
             return f"Error querying OpenAI: {str(e)}"
     
-    def run_query(self, user_query: str) -> str:
+    def run_query(self, user_query: str, debug_mode: bool = False) -> str:
         """Main method to run the complete RAG query pipeline"""
         print("Loading embeddings...")
         embeddings_data = self.load_embeddings()
@@ -136,39 +241,95 @@ class RAGQueryEngine:
         print("Formatting prompt...")
         prompt = self.format_prompt(user_query, similar_logs)
         
-        print("Querying OpenAI...")
-        response = self.query_openai(prompt)
+        if debug_mode:
+            print("\n" + "=" * 60)
+            print("DEBUG MODE - RAW PROMPT (would be sent to OpenAI):")
+            print("=" * 60)
+            return prompt
+        
+        print("Querying LLM...")
+        response = self.query_llm(prompt)
         
         return response
 
 def main():
     """Main function to run the RAG query engine"""
-    # Check for OpenAI API key
-    if not os.getenv("OPENAI_API_KEY"):
-        print("Error: OPENAI_API_KEY environment variable not set")
-        sys.exit(1)
-    
-    # Initialize the RAG engine
-    rag_engine = RAGQueryEngine()
-    
-    # Get user query
+    # Get LLM choice
     print("Personal Reflection Assistant")
     print("=" * 40)
-    user_query = input("Enter your question about your daily logs: ").strip()
+    print("Choose LLM backend:")
+    print("1. Ollama (local, no API key needed)")
+    print("2. LM Studio (local, no API key needed)")
+    print("3. OpenAI (cloud, requires API key)")
     
-    if not user_query:
-        print("No query provided. Exiting.")
-        return
+    choice = input("Enter choice (1, 2, or 3): ").strip()
     
-    # Run the query
-    print("\nProcessing your query...")
-    response = rag_engine.run_query(user_query)
+    if choice == "1":
+        backend = "ollama"
+        model = input("Enter Ollama model name (default: mistral): ").strip() or "mistral"
+        print(f"Using Ollama with model: {model}")
+    elif choice == "2":
+        backend = "lmstudio"
+        model = input("Enter LM Studio model name (default: local-model): ").strip() or "local-model"
+        print(f"Using LM Studio with model: {model}")
+    elif choice == "3":
+        backend = "openai"
+        model = "gpt-4"
+        print("Using OpenAI")
+    else:
+        print("Invalid choice. Using Ollama with mistral.")
+        backend = "ollama"
+        model = "mistral"
     
-    # Display results
-    print("\n" + "=" * 40)
-    print("RESPONSE:")
-    print("=" * 40)
-    print(response)
+    # Initialize the RAG engine
+    rag_engine = RAGQueryEngine(llm_backend=backend, model_name=model)
+    
+    print(f"\n🤖 Chatbot ready! Type 'quit' or 'exit' to end the conversation.")
+    print(f"💡 You can ask questions about your daily logs, mood patterns, etc.")
+    print("-" * 50)
+    
+    # Chat loop
+    while True:
+        try:
+            # Get user query
+            user_query = input("\nYou: ").strip()
+            
+            if not user_query:
+                continue
+                
+            if user_query.lower() in ['quit', 'exit', 'bye']:
+                print("👋 Goodbye! Thanks for chatting with your reflection assistant.")
+                break
+            
+            # Check for debug mode command
+            debug_mode = False
+            if user_query.startswith('/debug'):
+                debug_mode = True
+                user_query = user_query[7:].strip()  # Remove '/debug' prefix
+                if not user_query:
+                    print("❌ Please provide a question after /debug")
+                    continue
+            
+            # Run the query
+            print("🤔 Thinking...")
+            response = rag_engine.run_query(user_query, debug_mode=debug_mode)
+            
+            # Display results
+            print("\n" + "=" * 50)
+            if debug_mode:
+                print("🔍 DEBUG MODE - RAW PROMPT:")
+            else:
+                print("🤖 Assistant:")
+            print("=" * 50)
+            print(response)
+            print("-" * 50)
+            
+        except KeyboardInterrupt:
+            print("\n\n👋 Chat interrupted. Goodbye!")
+            break
+        except Exception as e:
+            print(f"❌ Error: {str(e)}")
+            print("Please try again.")
 
 if __name__ == "__main__":
     main() 
