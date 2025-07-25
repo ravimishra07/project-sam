@@ -46,3 +46,15 @@ The script will:
 Cleaned files are saved in `CleanedDaily/` using names like
 `15-5-25.json`. If multiple logs exist for the same day, a numeric
 suffix is appended (e.g., `15-5-25_2.json`).
+
+## Export chat format
+
+To create a single JSONL file for LoRA fine-tuning, run:
+
+```bash
+python processing/convert_to_chat.py
+```
+
+This reads all files in `CleanedDaily/` and writes `cleaned_chat_format.jsonl`.
+Each line in this file is a conversation with user prompts summarizing the
+log's status and a follow-up containing insights, goals and other details.
